@@ -1,0 +1,2 @@
+#!/usr/bin/env php
+<?php require_once 'lib\Init.php'; ?>
