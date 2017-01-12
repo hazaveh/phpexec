@@ -106,10 +106,7 @@ phpExec is awesome!
                 if (xhr.readyState == XMLHttpRequest.DONE) {
                     window.clearTimeout(timer);
                     $('#output').append(xhr.responseText);
-                }
-//                $('#output').append('state: ' + xhr.readyState + '<br />');
-//                console.log(xhr.responseText);
-//                $('#output').append('data: ' + xhr.responseText + '<br />');
+                    }
                 }, 1000);
             }
 

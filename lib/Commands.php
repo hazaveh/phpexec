@@ -38,6 +38,7 @@ class ServerCommand extends Command {
             $port = $input->getOption("port");
         }
         $output->writeln("<info>Starting Built in PHP Web Server!</info>");
+        $output->writeln("<comment>Server running at http://$host:$port</comment>");
         echo shell_exec("php -S $host:$port -c " . __DIR__ . "/../php.ini");
     }
 }
@@ -53,6 +54,8 @@ Class IncludeCommand extends Command {
     {
         if (!file_exists(__DIR__ . "/../includes")) {
             mkdir(__DIR__ . "/../includes");
+            $content = '<?php $foo = "bar"; ?>';
+            file_put_contents(__DIR__ . "/../includes/foo.php", $content);
             $output->writeln("<info>CREATING INCLUDES FOLDER : SUCCESS</info>");
         } else {
             $output->writeln("<error>INCLUDES FOLDER ALREADY EXISTS!</error>");
@@ -60,7 +63,7 @@ Class IncludeCommand extends Command {
         if (!file_exists(__DIR__ . "/../includes.php")) {
 $content = '<?php
 // Add your filed to the include folder and require them as below:
-// require_once "includes/foo.php";
+require_once "includes/foo.php";
 ?>';
             file_put_contents(__DIR__ . "/../includes.php", $content);
             $output->writeln("<info>CREATING INCLUDES.PHP FILE: SUCCESS</info>");
