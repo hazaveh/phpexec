@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6cfc8bd7-3599-43f1-93ba-9a9c61e6d640" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/Commands.php" afterPath="$PROJECT_DIR$/lib/Commands.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/View.php" afterPath="$PROJECT_DIR$/lib/View.php" />
-    </list>
+    <list default="true" id="6cfc8bd7-3599-43f1-93ba-9a9c61e6d640" name="Default" comment="" />
     <ignored path="phpexec.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -93,7 +88,7 @@
       <file leaf-file-name="View.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/View.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.187858">
+            <state vertical-scroll-proportion="1.1892202">
               <caret line="61" column="36" selection-start-line="61" selection-start-column="36" selection-end-line="61" selection-end-column="36" />
               <folding />
             </state>
@@ -302,7 +297,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="1912" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2553305" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -495,7 +490,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/View.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.187858">
+        <state vertical-scroll-proportion="1.1892202">
           <caret line="61" column="36" selection-start-line="61" selection-start-column="36" selection-end-line="61" selection-end-column="36" />
           <folding />
         </state>
