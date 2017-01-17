@@ -7,7 +7,7 @@ Write your php code in browser and see the result instantly. This package ships 
  * Execute any php code without limitation of online php compilers.
 
 
-Installation is easy. clone this repo and run composer install to download dependencies.
+Installation is easy. clone this repo and run **composer install** to download dependencies.
 
 ![Image of Yaktocat](http://blog.hazaveh.net/wp-content/uploads/phpexec.png)
 

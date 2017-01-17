@@ -3,3 +3,4 @@ composer.phar
 /includes/
 includes.php
 /.idea/
+composer.lock
