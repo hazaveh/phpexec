@@ -4,3 +4,4 @@ composer.phar
 includes.php
 /.idea/
 composer.lock
+**/.DS_Store

@@ -1,10 +1,11 @@
-# phpExec
+# phpExec 1.1
 
 Write your php code in browser and see the result instantly. This package ships with a simple command line tool uitilizing php built in web server.
 
  * Override php.ini variables by editing config file.
  * Include your own classes and php files
  * Execute any php code without limitation of online php compilers.
+ * Save your codes as snippets for future execution.
 
 
 Installation is easy. clone this repo and run **composer install** to download dependencies.
@@ -24,4 +25,4 @@ Only use this on restricted access sites or local environment. If access to this
  * Ace Editor
  * jQuery
  * Symfony Console Component
-
+ * VueJS
