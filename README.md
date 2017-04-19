@@ -1,4 +1,4 @@
-# phpExec 1.1
+# phpExec 1.2
 
 Write your php code in browser and see the result instantly. This package ships with a simple command line tool uitilizing php built in web server.
 

@@ -27,6 +27,7 @@ var phpexec = new Vue({
                        name: a.newSnippet,
                        code: editor.getSession().getValue()
                    });
+                   a.newSnippet = '';
                }
             });
 
