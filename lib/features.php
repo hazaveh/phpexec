@@ -10,6 +10,8 @@
                 <p>Installation of this package will include symfony var_dumper component. You can use <code>dump</code> functions anywhere within your code as you wish.</p><br>
                 <h4>Custom php.ini variables</h4>
                 <p>There is a php.ini file within the root of this project. you can simply edit this file and override the variables of php interpreter. remember this feature only works with command <code>php phpexec serve</code></p><br />
+                <h4>Composer Friendly</h4>
+                <p>Feel free to pull in any composer package doing <code>composer install package_name</code>. phpexec will automatically load the package in the editor and you can start creating instances of the package and use the methods.</p><br />
                 <h4>Safety</h4>
                 <p>Do not host this package on any public provider. This script allows the user to execute any php command on the server.</p><br />
             </div>
