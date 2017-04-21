@@ -43,6 +43,7 @@
                             <li v-for="(v, k) in snippets"><a href="#" v-on:click="loadSnippet(k)">{{v.name}}</a></li>
                             <li role="separator" class="divider"></li>
                             <li><a href="#" data-toggle="modal" data-target="#save-snippet">Create New</a></li>
+                            <li v-if="snippets.length > 0" ><a href="#" data-toggle="modal" data-target="#manage-snippet">Manage Snippets</a></li>
                         </ul>
                     </li>
                 </ul>

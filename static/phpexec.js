@@ -24,6 +24,7 @@ var phpexec = new Vue({
                if (res.status == "success") {
                    $("#save-snippet").modal("hide");
                    a.snippets.push({
+                       file: res.file,
                        name: a.newSnippet,
                        code: editor.getSession().getValue()
                    });
@@ -35,6 +36,14 @@ var phpexec = new Vue({
         loadSnippet: function(k) {
             if(confirm("You may lose your unsaved work if you load a saved snippet. Are you sure?")) {
                 editor.setValue(this.snippets[k].code, 1);
+            }
+        },
+        removeSnippet: function(s, i) {
+            var a = this;
+            if(confirm("Are you sure about deleting this snippet?")) {
+                $.post("lib/Snippets.php?action=destroy", {file: s}, function(res){
+                    a.$delete(a.snippets, i);
+                });
             }
         }
     },

@@ -18,6 +18,9 @@ class Snippets {
                 case "get":
                     $this->get();
                     break;
+                case "destroy":
+                    $this->destroy();
+                    break;    
             }
         }
 
@@ -32,17 +35,17 @@ class Snippets {
                     "code" => $_POST["code"]
                 ]);
 
-                $name = uniqid("phpexec_");
-                $name = getcwd() . DIRECTORY_SEPARATOR . $name . ".json";
+                $fileName = uniqid("phpexec_");
+                $name = getcwd() . DIRECTORY_SEPARATOR . $fileName . ".json";
                 file_put_contents($name, $snippet);
 
-                echo json_encode(["status"=>"success"]);
+                echo json_encode(["status"=>"success", "file" => $fileName . ".json"]);
 
             } catch (Exception $e) {
-                die($e->getMessage());
+                echo json_encode(["status" => "error", "message" => $e->getMessage()]);
             }
         } else {
-            echo json_encode(["status"=>"error"]);
+            echo json_encode(["status"=>"error", "message" => "Data input is empty."]);
         }
     }
 
@@ -57,8 +60,11 @@ class Snippets {
                     }
                 }
                 $output = [];
+                
                 foreach ($snippets as $snippet) {
-                    $output[] = json_decode(file_get_contents($snippetsPath . DIRECTORY_SEPARATOR . $snippet));
+                    $res = ["file" => $snippet];
+                    $res = array_merge($res, json_decode(file_get_contents($snippetsPath . DIRECTORY_SEPARATOR . $snippet), true));
+                    $output[] = $res;
                 }
 
                 echo json_encode($output);
@@ -68,10 +74,20 @@ class Snippets {
             }
     }
 
-    public function delete() {
-
+    public function destroy() {
+            if ($_POST["file"]) {
+               try {
+                chdir("../snippets/");
+                unlink(trim($_POST["file"]));
+                echo json_encode(["status"=>"success"]);
+               } catch (Exception $e) {
+                echo json_encode(["status" => "error", "message" => $e->getMessage()]);
+               }     
+            } else {
+                echo json_encode(["status"=>"error", "message" => "Data input is empty."]);
+            }
     }
 }
 
-$run = new Snippets();
+new Snippets();
 

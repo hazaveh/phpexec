@@ -40,3 +40,26 @@
         </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
+<div class="modal fade" tabindex="-1" role="dialog" id="manage-snippet">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Manage Snippets!</h4>
+            </div>
+            <div class="modal-body" style="text-align: justify">
+                <table class="table table-striped">
+                    <tr v-for="(v, k) in snippets">
+                    <td width="70%">{{v.name}}</td>
+                    <td><a href="#" v-on:click="loadSnippet(k)" data-dismiss="modal" >Load</a></td>
+                    <td><a href="#" v-on:click="removeSnippet(v.file, k)">Remove</a></td>
+                    </tr>
+                </table>
+                <div class="alert alert-danger" v-if="snippets.length < 1" >There is no snippet saved in the system.</div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
