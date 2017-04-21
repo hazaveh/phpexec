@@ -11,7 +11,7 @@ Write your php code in browser and see the result instantly. This package ships 
 
 Installation is easy. clone this repo and run **composer install** to download dependencies.
 
-![Image of Yaktocat](http://blog.hazaveh.net/wp-content/uploads/phpexec.png)
+![Image of Yaktocat](http://blog.hazaveh.net/wp-content/uploads/phpexec-2.png)
 
 The symfony var_dumper is loaded witht he project. feel free to use it within your code for more happiness.
 
