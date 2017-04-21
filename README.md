@@ -1,4 +1,4 @@
-# phpExec 1.2
+# phpExec 1.3
 
 Write your php code in browser and see the result instantly. This package ships with a simple command line tool uitilizing php built in web server.
 
@@ -6,6 +6,7 @@ Write your php code in browser and see the result instantly. This package ships 
  * Include your own classes and php files
  * Execute any php code without limitation of online php compilers.
  * Save your codes as snippets for future execution.
+ * Manage Snippets
 
 
 Installation is easy. clone this repo and run **composer install** to download dependencies.
