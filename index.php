@@ -8,6 +8,5 @@
 $content = "<?php
 // Write Whatever you like!
 echo 'phpExec is awesome!';
-?>
 ";
 require_once 'lib/View.php';
