@@ -1,4 +1,7 @@
 {
+    "name": "hazaveh/phpexec",
+    "description": "Limitless PHP Executer Within Browser",
+    "license": "MIT",
     "require": {
         "symfony/console": "^3.2",
         "symfony/var-dumper": "^3.2"
