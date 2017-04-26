@@ -1,6 +1,6 @@
 # phpExec 1.3
 
-Write your php code in browser and see the result instantly. This package ships with a simple command line tool uitilizing php built in web server.
+Write your php code in browser and see the result instantly. This package ships with a simple command line tool uitilizing php built-in web server.
 
  * Override php.ini variables by editing config file.
  * Include your own classes and php files
@@ -16,7 +16,7 @@ Installation is easy. clone this repo and run **composer install** to download d
 The symfony var_dumper is loaded witht he project. feel free to use it within your code for more happiness.
 
 # Warning!
-Only use this on restricted access sites or local environment. If access to this script is exposed you the user may execute codes that compromise your security.
+Only use this on restricted access sites or local environment. If access to this script is exposed to unauthorized users they  may execute code that compromise your security.
 
 [phpExec](https://labs.hazaveh.net/phpexec) Official Page.
 
