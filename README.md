@@ -13,7 +13,11 @@ Installation is easy. clone this repo and run **composer install** to download d
 
 ![Image of Yaktocat](http://blog.hazaveh.net/wp-content/uploads/phpexec-2.png)
 
-The symfony var_dumper is loaded witht he project. feel free to use it within your code for more happiness.
+The symfony var_dumper is loaded with the project. feel free to use it within your code for a happier life.
+
+### Install Additional Composer Packages
+
+You can pull in any composer package. The package will be accessible in the editor automatically. There is no need for including autoload.php file.
 
 # Warning!
 Only use this on restricted access sites or local environment. If access to this script is exposed to unauthorized users they  may execute code that compromise your security.
