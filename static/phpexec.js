@@ -81,3 +81,7 @@ function parse(){
         }
     }, 1000);
 }
+
+$(window).on("beforeunload", function() {
+    return "You may lose any unsaved changes.";
+});
