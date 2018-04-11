@@ -5,3 +5,4 @@ includes.php
 /.idea/
 composer.lock
 **/.DS_Store
+/snippets/*
